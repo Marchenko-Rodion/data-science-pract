@@ -171,7 +171,7 @@ class StockExample(server.App):
                 pass
             else:
                 try:
-                    Filename = LoadClimateDatasetAsCSV(CWD,province,1982,2024)
+                    Filename = self.LoadClimateDatasetAsCSV(CWD,province,1982,2024)
                 except:
                     print("\t» Failed to load for province №",province)
         print("»» Loaded all!!!")

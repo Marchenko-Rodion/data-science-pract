@@ -34,6 +34,7 @@ def PlotRandPoints(ax, rawX, rawY, randY):
 #Дана функція реалізує лінійну регресію методом найменших квадратів на основі двох формул на вибір
 def SmallestSquareMethodRegression(rawX, randY, RegressionType):
     if RegressionType == 2: #Алгоритм 1 (тягне пряму через найбільші скупчення випадкових точок, не дуже точний на випадковій множині)
+                            #Посилання на зразок застосування такої формули: https://en.wikipedia.org/wiki/Simple_linear_regression#Numerical_example
         SumX = numpy.sum(rawX)
         Sum2X = numpy.sum(rawX**2)
         SumY = numpy.sum(randY)
